@@ -1,0 +1,12 @@
+this is the server part of wwwsh
+
+See COPYING for licence details.
+
+Edit config.py to fit your environment.
+
+You need python [1] to run the server. Type
+python server.py
+
+alexander.bernauer@ulm.ccc.de
+
+[1] http://www.python.org

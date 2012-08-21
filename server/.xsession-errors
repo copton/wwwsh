@@ -1,0 +1,3 @@
+/usr/bin/pwm: Caught signal 1. Dying.
+XIO:  fatal IO error 104 (Connection reset by peer) on X server ":0.0"
+      after 11831 requests (11712 known processed) with 20 events remaining.

@@ -56,3 +56,7 @@ wwwsh fragt regelmäßig beim Webserver nach, ob es ein Kommando zum Ausführen 
 Das empfangene Kommando wird in einer Shell ausgeführt und das Ergebnis base64 kodiert. Zum Übermitteln der Antwort wird zuerst das CGI Skript "/sendResul.cgi" mit dem Parameter "begin" angesurft. Danach folgen beliebig viele Aufrufe des selben Skriptes mit dem Parameter "data" und anschließendem base64 kodiertem Datenteil. Die Länge der Antwort ist damit quasi unbeschränkt. Ist die Antwort komplett übertragen folgt ein letzter Aufruf des Skriptes mit dem Parameter "end". Bei jedem Aufruf sendet der Webserver einen Meta-Refresh auf die Response-URL. Das dient zur Synchronisation der beiden Seiten.
 
 wwwsh ist lediglich eine Machbarkeitsstudie ("Proof of Concept"), daher wurde kein Wert darauf gelegt, das Browserfenster zu verstecken. Das kann bei Bedarf auf unterschiedliche Arten erreicht werden: Erstens könnte man das Fenster aus dem sichtbaren Bereich des Desktops verschieben. Dann bleibt allerdings der Eintrag in der Startleiste. Zweitens könnte man eine Applikation starten, die wie z.B. ein Spiel im Fullscreen Modus läuft, so dass der komplette Desktop nicht einzusehen ist, und danach erst den Browser starten. Drittens könnte man die Fensternachrichten, die zum Anzeigen des Browserfensters führen (WM_SHOWWINDOW), gezielt abfangen. Das ist ein weiteres Feature der Windows-Systembibliotheken.
+
+References
+----------
+ * wwwsh is based on [breakout.c](www.dingens.org/breakout.c)
